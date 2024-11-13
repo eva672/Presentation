@@ -39,7 +39,7 @@ stores device information and kernel related data to hardware .
 In Linux, storage devices are generically referred as block devices, because data is read to and
 from these devices in blocks of buffered data with different sizes and positions.
 
-### BOOT SYSTEM
+## BOOT SYSTEM
 ```mermaid
 graph LR
 A[HARD DISK DRIVE 500GB]--> C(FIRST PART 512B)
@@ -102,7 +102,7 @@ The memory space where the kernel stores its messages, including the boot messag
 - ``dmesg``
 display all current messages
 
-***CHANGING RUNLEVELS/BOOT TARGETS AND SHUTDOWN OR REBOOT SYSTEM***
+## CHANGING RUNLEVELS/BOOT TARGETS AND SHUTDOWN OR REBOOT SYSTEM
 ### SysVinit
 
 **SysVinit** is the traditional init system used in Unix and Linux 
