@@ -151,6 +151,7 @@ The initialization scripts used by Upstart are located in the directory`` /etc/i
 
 **SHUTDOWN AND RESTART**
 ``shutdown``
+
 used to shutdown the system 
 
 It automatically notifies all logged-in users with a warning message in their shell sessions and new
