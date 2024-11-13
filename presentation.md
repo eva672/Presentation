@@ -152,3 +152,10 @@ The initialization scripts used by Upstart are located in the directory`` /etc/i
 **SHUTDOWN AND RESTART**
 ``shutdown``
 used to shutdown the system
+It automatically notifies all logged-in users with a warning message in their shell sessions and new
+logins are prevented. Command shutdown acts as an intermediary to SysV or systemd procedures,
+that is, it executes the requested action by calling the corresponding action in the services
+manager adopted by the system.
+After shutdown is executed, all processes receive the ``SIGTERM`` signal, followed by the ``SIGKILL``
+signal, then the system shuts down or changes its runlevel. By default, when neither options -h or
+-r are used, the system alternates to runlevel 1, that is, the single user mode. 
