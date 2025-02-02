@@ -16,5 +16,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: notifications
     - run: |
-        curl -H "Content-Type: application/json" -X POST -d '{"content": "🚀 New push detected in the repository! Commit details: ${{ github.actor }} just pushed to ${{ github.ref }}."}' "${{ secrets.notifications }}"
+        curl -H "Content-Type: application/json" -X POST -d '{"content": "🚀 New push detected in the repository! Commit details: ${{ github.actor }} just pushed to ${{ github.ref }}."}' "${{ secrets.notification }}"
 
